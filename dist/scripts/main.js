@@ -1,0 +1,2 @@
+var bn_app=bn_app||{};bn_app.header={init:function(e){var n=e("#menu-main-mobile").unbind(),i=e("#menu-main"),o=e("#secondary");i.removeClass("show"),o.removeClass("show"),n.on("click",function(e){e.preventDefault(),i.slideToggle(function(){i.is(":hidden")&&i.removeAttr("style")}),o.slideToggle(function(){o.is(":hidden")&&o.removeAttr("style")})})}},function(e){bn_app.header.init(e)}(jQuery);
+//# sourceMappingURL=main.js.map

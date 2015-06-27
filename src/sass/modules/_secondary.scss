@@ -1,0 +1,33 @@
+/**
+ * sidebar
+ */
+
+.secondary {
+
+	// mobile menu hamburger toggles display
+	display: none;
+
+	.widget-area {
+		margin: 40px auto 0;
+	}
+}
+
+
+@include media($large-screen) {
+
+	.secondary {
+		display: block;
+
+		.widget-area {
+			margin: 0 auto 0;
+		   	> :first-child {
+		   		padding-top: 40px;
+		   	}
+		   	> :last-child {
+		   		margin-bottom: 0;
+		   	}
+		}
+
+	}
+
+}

@@ -1,0 +1,20 @@
+#branding {
+	position: relative;
+	overflow: hidden;
+	img {
+		position: absolute;
+		max-width: $max-width;
+		width: 100%;
+	}
+	#site-title,
+	#site-description {
+		position: relative;
+		text-align: center;
+	}
+	#site-title {
+		padding: 1em 1em 0.5em 1em;
+	}
+	#site-description {
+		padding: 0.5em 1em 1em 1em;
+	}
+}

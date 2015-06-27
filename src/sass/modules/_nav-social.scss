@@ -1,0 +1,88 @@
+.social-navigation {
+	margin: 9.0909% 0;
+	ul {
+		list-style: none;
+		margin: 0 0 -1.6em 0;
+	}
+	li {
+		float: left;
+	}
+	a {
+		display: block;
+		height: 3.2em;
+		position: relative;
+		width: 3.2em;
+		&:before {
+			@include icon-share;
+			font-size: 24px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	a[href*="codepen.io"]:before {
+		@include icon-codepen;
+	}
+	a[href*="dribbble.com"]:before {
+		@include icon-dribbble;
+	}
+	a[href*="dropbox.com"]:before {
+		@include icon-dropbox;
+	}
+	a[href*="facebook.com"]:before {
+		@include icon-facebook;
+	}
+	a[href$="/feed/"]:before {
+		@include icon-feed;
+	}
+	a[href*="flickr.com"]:before {
+		@include icon-flickr;
+	}
+	a[href*="foursquare.com"]:before {
+		@include icon-foursquare;
+	}
+	a[href*="plus.google.com"]:before {
+		@include icon-google-plus;
+	}
+	a[href*="github.com"]:before {
+		@include icon-github;
+	}
+	a[href*="instagram.com"]:before {
+		@include icon-instagram;
+	}
+	a[href*="linkedin.com"]:before {
+		@include icon-linkedin;
+	}
+	a[href*="mailto:"]:before {
+		@include icon-mailto;
+	}
+	a[href*="pinterest.com"]:before {
+		@include icon-pinterest;
+	}
+	a[href*="reddit.com"]:before {
+		@include icon-reddit;
+	}
+	a[href*="steamcommunity.com"]:before {
+		@include icon-steam;
+	}
+	a[href*="stumbleupon.com"]:before {
+		@include icon-stumbleupon;
+	}
+	a[href*="twitch.tv"]:before {
+		@include icon-twitch;
+	}
+	a[href*="twitter.com"]:before {
+		@include icon-twitter;
+	}
+	a[href*="vimeo.com"]:before {
+		@include icon-vimeo;
+	}
+	a[href*="wordpress.com"]:before,
+	a[href*="wordpress.org"]:before {
+		@include icon-wordpress;
+	}	
+	a[href*="youtube.com"]:before {
+		@include icon-youtube;
+	}
+
+}

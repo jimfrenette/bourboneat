@@ -1,0 +1,5 @@
+// px fallback for IE8, etc.
+@mixin font-size($px) {
+	font-size: $px + px;
+	font-size: rem($px); // bourbon rem mixin
+}

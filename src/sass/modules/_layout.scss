@@ -1,0 +1,48 @@
+/*
+ * add/change change settinhgs in
+ * /sass/base/_grid-settings.scss
+ *
+ * for more info: http://neat.bourbon.io
+ */
+
+header.site-header,
+div.site-content,
+footer.site-footer {
+	@include outer-container;
+}
+
+// mobile first
+.secondary {
+	@include span-columns(16);
+}
+.site-main {
+	@include span-columns(16);
+}
+// http://css-tricks.com/rems-ems/
+html {
+	font-size: $em-base * 1.2;
+}
+
+@include media($large-screen) {
+
+	.secondary {
+	   	@include span-columns(5);
+	}
+	.site-main {
+	    @include span-columns(11);
+	}
+	html {
+		font-size: $em-base;	
+	}
+}
+
+@include media($wide-screen) {
+
+	.secondary {
+	   	@include span-columns(4);
+	}
+	.site-main {
+	    @include span-columns(12);
+	}
+
+}

@@ -1,0 +1,373 @@
+.site-content {
+	background-color: $content-background-color;
+}
+
+.entry-header {
+	padding: 0 $base-padding;
+}
+
+.entry-content,
+.entry-summary {
+	padding: 0 $base-padding $base-padding;
+}
+
+.hentry {
+	padding-top: 40px;
+	position: relative;
+}
+
+.hentry.has-post-thumbnail {
+	padding-top: 0;
+}
+
+.hentry.sticky:not(.has-post-thumbnail) {
+	padding-top: -webkit-calc($base-padding + 24px);
+	padding-top: calc($base-padding + 24px);
+}
+
+.hentry + .hentry {
+	border-top: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+.post-thumbnail {
+	border: 0;
+	display: block;
+	margin-bottom: 2.4em;
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+a.post-thumbnail:hover,
+a.post-thumbnail:focus {
+	opacity: 0.85;
+}
+
+.entry-title {
+	@include font-size(44);
+	line-height: 1.1538;
+	margin-bottom: $em-base * 1.75;
+}
+
+.entry-content,
+.entry-summary {
+	padding: 0 $base-padding $base-padding;
+        > :last-child {
+        margin-bottom: 0;
+    }
+    .more-link:after {
+        @include icon-arrow-right2;
+        position: relative;
+        top: 5px;
+    }
+	.more-link,
+	.more-link:after {
+    	white-space: nowrap;
+	}
+}
+
+.entry-content,
+.entry-summary,
+.page-content,
+.comment-content {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+    a,
+    .pingback .comment-body > a {
+        border-bottom: 1px solid $dark-gray;
+        &:hover,
+        &:focus {
+            border-bottom: 0;
+        }
+    }
+    a img {
+        display: block;
+    }
+    > h1:first-child,
+    > h2:first-child,
+    > h3:first-child,
+    > h4:first-child,
+    > h5:first-child,
+    > h6:first-child {
+        margin-top: 0;
+    }
+}
+
+.author-info {
+	border-top: 1px solid $light-gray;
+	border-top: 1px solid rgba(51, 51, 51, 0.1);
+	margin: 0 $base-padding;
+	padding: $base-padding 0;
+    .avatar {
+        float: left;
+        height: 36px;
+        margin: 0 1.6em 1.6em 0;
+        width: 36px;
+    }
+}
+
+.author-heading {
+	color: $medium-gray;
+	color: rgba(51, 51, 51, 0.7);
+	@include font-size(19);
+	letter-spacing: 0.04em;
+	margin-bottom: 1.5em;
+	text-transform: uppercase;
+}
+
+.author-title {
+	@include font-size(20);
+	clear: none;
+}
+
+.author-bio {
+	@include font-size(19);
+	line-height: 1.5;
+	overflow: hidden;
+	padding-bottom: 1px;
+}
+
+.author-description {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word;
+    a {
+        border-bottom: 1px solid $dark-gray;
+        &:hover,
+        &:focus {
+            border-bottom: 0;
+        }
+    }
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.author-link {
+	white-space: nowrap;
+    &:after {
+        @include icon-arrow-right2;
+        position: relative;
+        top: 1px;
+    }
+}
+
+.sticky-post {
+	background-color: $dark-gray;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	padding: 0.25em 0.5em;
+	position: absolute;
+	top: 0;
+	text-transform: uppercase;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.sticky .posted-on {
+	display: none;
+}
+
+.posted-on,
+.byline,
+.cat-links,
+.tags-links,
+.comments-link,
+.entry-format,
+.edit-link,
+.full-size-link {
+	margin-right: 1em;
+	&:before {
+		margin-right: 2px;
+		position: relative;
+	}
+}
+
+.comments-link,
+.edit-link {
+	white-space: nowrap;
+}
+
+.entry-attachment {
+	margin-bottom: 1.6em;
+}
+
+.entry-caption {
+	color: $medium-gray;
+	color: rgba(51, 51, 51, 0.7);
+	font-family: "Noto Sans", sans-serif;
+	@include font-size(19);
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	line-height: 1.5;
+	padding-top: 0.5em;
+	word-wrap: break-word;
+	> :last-child {
+		margin-bottom: 0;
+	}
+}
+
+.byline:before {
+	@include icon-user;
+}
+.cat-links:before {
+	@include icon-folder-open;
+}
+.comments-link:before {
+	@include icon-bubble;
+}
+.edit-link:before {
+	@include icon-mug;
+}
+.full-size-link:before {
+	@include icon-zoom-in;
+}
+.posted-on:before {
+	@include icon-calendar;
+}
+.tags-links:before {
+	@include icon-price-tag;	
+}
+.format-aside .entry-format:before {
+	@include icon-pushpin;
+}
+.format-image .entry-format:before {
+	@include icon-image;
+}
+.format-gallery .entry-format:before {
+	@include icon-images;
+}
+.format-video .entry-format:before {
+	@include icon-play;
+}
+.format-status .entry-format:before {
+	@include icon-trophy;
+}
+.format-quote .entry-format:before {
+	@include icon-quotes-left;
+}
+.format-link .entry-format:before {
+	@include icon-link;
+}
+.format-chat .entry-format:before {
+	@include icon-bubbles;
+}
+.format-audio .entry-format:before {
+	@include icon-volume-medium;
+}
+
+.format-link .entry-title a:after {
+	@include icon-new-tab;
+	font-size: 24px;
+	height: 24px;
+	position: relative;
+	top: 0;
+	width: 24px;
+}
+
+.blog .format-status .entry-title,
+.archive .format-status .entry-title {
+	display: none;
+}
+
+.page-header {
+	border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+	padding: 40px $base-padding 0;
+}
+
+.page-title {
+	@include font-size(28);
+	line-height: 1.3333;
+}
+
+.page-links {
+	clear: both;
+	
+	margin-bottom: 1.3333em;
+	a,
+	> span {
+		border: 1px solid $light-gray;
+		border: 1px solid rgba(51, 51, 51, 0.1);
+		display: inline-block;
+		@include font-size(19);
+		height: 2em;
+		line-height: 2;
+		margin: 0 0.3333em 0.3333em 0;
+		text-align: center;
+		width: 2em;	
+	}
+	a {
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
+		background-color: $dark-gray;
+		border-color: $dark-gray;
+		color: #fff;
+		&:hover,
+		&:focus {
+			background-color: $medium-gray;
+			background-color: rgba(51, 51, 51, 0.7);
+			border-color: transparent;
+			color: #fff;
+		}
+	}
+	> .page-links-title {
+		border: 0;
+		color: $medium-gray;
+		color: rgba(51, 51, 51, 0.7);
+		height: auto;
+		margin: 0;
+		padding-right: 0.5em;
+		width: auto;
+	}
+}
+
+.taxonomy-description {
+	color: $medium-gray;
+	color: rgba(51, 51, 51, 0.7);
+	padding-top: 0.4em;
+	a {
+		border-bottom: 1px solid $dark-gray;
+		&:hover,
+		&:focus {
+			border-bottom: 0;
+		}
+	}
+	> :last-child {
+		margin-bottom: 0;
+	}
+}
+
+.type-attachment {
+	.entry-title {
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+		word-wrap: break-word;
+	}
+}
+
+@include media($large-screen-up) {
+
+	.author-heading {
+		@include font-size(14);
+		letter-spacing: 0.02em;
+		margin-bottom: 1.0em;
+	}
+
+	.author-bio {
+		@include font-size(14);
+		line-height: 1.3;
+	}
+
+}

@@ -1,0 +1,64 @@
+/**
+ * image and comment nav
+ */
+
+.image-navigation,
+.comment-navigation {
+	color: $medium-gray;
+	color: rgba(51, 51, 51, 0.7);
+	@include font-size(19);
+	font-weight: 700;
+	line-height: 1.5;
+	text-transform: uppercase;
+	a {
+		color: $medium-gray;
+		color: rgba(51, 51, 51, 0.7);
+		&:hover,
+		&:focus {
+			color: $dark-gray;		
+		}
+	}
+	.nav-previous:not(:empty),
+	.nav-next:not(:empty) {
+		display: inline-block;	
+	}
+	.nav-previous:not(:empty) + .nav-next:not(:empty):before {
+		content: "\2215"; //forward slash
+		font-weight: 400;
+		margin: 0 0.7em;	
+	}
+	.nav-previous {
+		a:before {
+			@include icon-arrow-left2;
+			margin-right: 0.2em;
+			position: relative;
+		}
+	}
+	.nav-next {		
+		a:after {
+			@include icon-arrow-right2;
+			margin-left: 0.2em;
+			position: relative;
+		}
+	}
+}
+
+.comment-navigation {
+	border-top: 1px solid $light-gray;
+	border-top: 1px solid rgba(51, 51, 51, 0.1);
+	border-bottom: 1px solid $light-gray;
+	border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+	padding: 2em 0;
+}
+
+.comments-title + .comment-navigation {
+	border-bottom: 0;
+}
+
+.image-navigation {
+	padding: 0 $base-padding;
+	.nav-previous:not(:empty),
+	.nav-next:not(:empty) {
+		margin-bottom: 2em;
+	}
+}

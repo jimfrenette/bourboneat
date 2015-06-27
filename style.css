@@ -1,0 +1,23 @@
+/*
+Theme Name: bourboneat
+Theme URI: 
+Author: Jim Frenette
+Author URI: http://jimfrenette.com/
+Description: Theme that uses a lot of Bourbon and Browserify.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bn
+
+Tags:
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+/* -------------------------------------------------- 
+
+	This stylesheet will not be loaded by default.
+	
+	The main stylesheet in css/style.css and
+    src/sass/style.scss.
+
+-------------------------------------------------- */
