@@ -11,16 +11,23 @@ footer.site-footer {
 	@include outer-container;
 }
 
-// mobile first
+// mobile first, breakpoints in /base/_grid-settings.scss
 .secondary {
 	@include span-columns(16);
 }
 .site-main {
 	@include span-columns(16);
 }
+
 // http://css-tricks.com/rems-ems/
 html {
-	font-size: $em-base * 1.2;
+	font-size: $em-base * 0.75; // 12px default rem
+}
+
+@include media($medium-screen) {
+	html {
+		font-size: $em-base * 0.875;  // 14px default rem
+	}
 }
 
 @include media($large-screen) {
@@ -32,7 +39,7 @@ html {
 	    @include span-columns(11);
 	}
 	html {
-		font-size: $em-base;	
+		font-size: $em-base; // 16px default rem
 	}
 }
 
