@@ -3,7 +3,7 @@ Theme Name: bourboneat
 Theme URI: 
 Author: Jim Frenette
 Author URI: http://jimfrenette.com/
-Description: Theme that uses a lot of Bourbon and Browserify.
+Description: Theme that includes Bourbon Neat and IcoMoon.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,7 +17,7 @@ This theme, like WordPress, is licensed under the GPL.
 
 	This stylesheet will not be loaded by default.
 	
-	The main stylesheet in css/style.css and
-    src/sass/style.scss.
+	The main stylesheet in dist/styles/main.css and
+    src/sass/main.scss.
 
 -------------------------------------------------- */
