@@ -14,8 +14,12 @@ $ gulp styles // recompile sass
 $ gulp js // recompile js
 </code></pre>
 
+## Menus
 
-TODO
-----
-1. Instructions for header nav menu name and location
-2. https://en.support.wordpress.com/menus/social-links-menu/
+### Header nav menu
+
+After activating the theme, in Appearance > Menus, select the Manage Locations tab. Then for the Primary Menu, select the menu to use in the Header nav.
+
+
+## TODO
+1.  https://en.support.wordpress.com/menus/social-links-menu/
