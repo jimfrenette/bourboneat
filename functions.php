@@ -1,6 +1,13 @@
 <?php
 
 /**
+ * set the content width
+ */
+if ( ! isset( $content_width ) ) {
+	$content_width = 768;
+}
+
+/**
  * bourboneat only works in WordPress 4.1 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '4.1-alpha', '<' ) ) {

@@ -1,7 +1,7 @@
 {
   "name": "bourboneat",
   "version": "1.0.0",
-  "description": "wp theme using a lot of bourbon and some browserify",
+  "description": "wp theme using bourbon",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
