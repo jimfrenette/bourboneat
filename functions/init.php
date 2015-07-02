@@ -21,10 +21,12 @@ function setup() {
 	 */
 	add_theme_support('post-thumbnails');
 
-	// This theme uses wp_nav_menu() in two locations.
+	// This theme uses wp_nav_menu() in four locations.
 	register_nav_menus( array(
-		'primary' => __('Primary Menu',      'bn'),
-		'social'  => __('Social Links Menu', 'bn'),
+		'primary' 	=> __('Primary Menu', 'bn'),
+		'social'  	=> __('Social Links Menu', 'bn'),
+		'footer' 	=> __('Footer Menu', 'bn'), 
+		'terms' => __('Terms Footer Menu', 'bn') // typically for terms and conditions and privacy policy
 	));
 
 	/*

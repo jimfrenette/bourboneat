@@ -33,3 +33,11 @@ Social links are icons that correspond with the URL that is added to a menu of l
     - /src/sass/modules/_nav-social.scss
 
     * more info:  https://en.support.wordpress.com/menus/social-links-menu/
+
+### Footer
+
+After activating the theme, in Appearance > Menus, select the Manage Locations tab. Then for the Footer Menu, select the menu to use in the Footer. Typically this is for links to About and Contact pages. See the documentation folder for more info.
+
+### Terms
+
+After activating the theme, in Appearance > Menus, select the Manage Locations tab. Then for the Terms Menu, select the menu to use in the Footers secondary links. Typically this is for links to Terms and Conditions and Privacy Policy pages. See the documentation folder for more info.
