@@ -16,7 +16,8 @@ get_sidebar();
 ?>
 
 <main id="main" class="site-main" role="main">
-	<?php
+
+<?php
 	if ( have_posts() ) :
 
 		if ( is_home() && ! is_front_page() ) : ?>
@@ -46,7 +47,8 @@ get_sidebar();
 		get_template_part( 'content', 'none' );
 
 	endif;
-	?>
+?>
+
 </main>
 
 <?php get_footer(); ?>

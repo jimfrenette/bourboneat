@@ -27,7 +27,7 @@
 			    </a>
 			    <a href="javascript:void(0)" class="navigation-menu-button icon-menu" id="menu-main-mobile"></a>
 					
-				<?php if ( has_nav_menu('primary')) : ?>
+				<?php if ( has_nav_menu('primary') ) : ?>
 				<nav id="menu" role="navigation">
 					<?php
 						// Primary navigation menu.

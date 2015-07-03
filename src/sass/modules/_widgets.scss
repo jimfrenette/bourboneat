@@ -1,16 +1,21 @@
 .widget {
+	background-color: $content-background-color;
+	
 	color: $medium-gray;
 	color: rgba(51, 51, 51, 0.7);
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
-	margin: 0 auto 9.09090%;
-	padding: 0 $base-padding $base-padding;
+	margin: 0 auto;
+	padding: 30px $base-padding;	
 	width: 100%;
 	word-wrap: break-word;
 	pre {
 		line-height: 1.2;
+	}
+	> :first-child {	
+		padding-top: 0;
 	}
 	> :last-child {
 		margin-bottom: 0;
@@ -18,6 +23,7 @@
 }
 
 .widget-title {
+	@include font-size(16);
 	color: $dark-gray;
 	margin: 0 0 $em-base * 0.5;
 	letter-spacing: 0.04em;
@@ -80,6 +86,9 @@
 	li:last-child {
 		padding-bottom: 0;
 	}
+	.widget-title {
+		margin-bottom: $em-base;
+	}
 }
 
 .widget_categories .children,
@@ -135,4 +144,13 @@
 			border-bottom: 0;		
 		}
 	}
+}
+
+
+@include media($large-screen-up) {
+
+	.widget {
+		margin: 0 auto 30px;
+	}
+
 }

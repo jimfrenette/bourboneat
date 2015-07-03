@@ -1,7 +1,7 @@
 .pagination {
 	
-	margin: 40px 0;
-	padding: 0;
+	margin: 0;
+	padding: 20px 0 25px;
 	background-color: #fff;
 	border-top: 1px solid rgba(51, 51, 51, 0.1);
 	
@@ -142,6 +142,7 @@
 @include media($large-screen-up) {
 
 	.pagination {
+		margin: 30px 0;
 		border-top: 0;
 		box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 		padding: 0;

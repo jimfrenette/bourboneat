@@ -15,18 +15,19 @@ footer.site-footer {
 .secondary {
 	@include span-columns(16);
 }
+
 .site-main {
 	@include span-columns(16);
 }
 
 // http://css-tricks.com/rems-ems/
 html {
-	font-size: $em-base * 0.75; // 12px default rem
+	font-size: $em-base * 0.875; // 14px default rem
 }
 
 @include media($medium-screen) {
 	html {
-		font-size: $em-base * 0.875;  // 14px default rem
+		font-size: $em-base;  // 16px default rem
 	}
 }
 
@@ -35,12 +36,15 @@ html {
 	.secondary {
 	   	@include span-columns(5);
 	}
+	
 	.site-main {
 	    @include span-columns(11);
 	}
-	html {
-		font-size: $em-base; // 16px default rem
+
+	.site-content {
+		background-color: transparent;
 	}
+
 }
 
 @include media($wide-screen) {

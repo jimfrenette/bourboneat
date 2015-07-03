@@ -8,9 +8,10 @@ get_header();
 get_sidebar();
 ?>
 
-	<main id="main" class="site-main" role="main">
+<main id="main" class="site-main" role="main">
 
-	<?php if ( have_posts() ) : ?>
+<?php
+	if ( have_posts() ) : ?>
 
 		<header class="page-header">
 			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'bn' ), get_search_query() ); ?></h1>
@@ -43,8 +44,8 @@ get_sidebar();
 		get_template_part( 'content', 'none' );
 
 	endif;
-	?>
+?>
 
-	</main><!-- .site-main -->
+</main><!-- .site-main -->
 
 <?php get_footer(); ?>

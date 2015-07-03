@@ -37,6 +37,7 @@
 	$footer-disclaimer-color: transparentize($footer-color, 0.6);
 
 	background: $footer-background;
+	font-family: $heading-font-family;
 	padding: $base-spacing;
 
 	.footer-logo {

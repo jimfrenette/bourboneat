@@ -32,6 +32,8 @@
 .secondary-toggle:before,
 .social-navigation a:before,
 .tags-links:before,
+.widget_pages h2:before,
+.widget_tag_cloud h2:before,
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon';
 	speak: none;
@@ -164,6 +166,9 @@
 @mixin icon-price-tag {
 	content: "\e935";	
 }
+@mixin icon-price-tags {
+	content: "\e936";	
+}
 @mixin icon-pushpin {
 	content: "\e946";
 }
@@ -212,4 +217,14 @@
 
 .icon-menu:before {
 	@include icon-menu;
+}
+
+.widget_pages h2:before {
+	@include icon-folder-open;
+	margin-right: 0.25em
+}
+
+.widget_tag_cloud h2:before {
+	@include icon-price-tags;
+	margin-right: 0.25em
 }
