@@ -82,6 +82,9 @@
 	font-size: 24px;
 }
 
+@mixin icon-apple {
+	content: "\eabf";
+}
 @mixin icon-arrow-left2 {
 	content: "\ea40";
 }
@@ -163,6 +166,9 @@
 @mixin icon-play {
 	content: "\e912";
 }
+@mixin icon-plus {
+	content: "\ea0a";
+}
 @mixin icon-price-tag {
 	content: "\e935";	
 }
@@ -205,6 +211,9 @@
 @mixin icon-volume-medium {
 	content: "\ea27";
 }
+@mixin icon-windows {
+	content: "\eac3";
+}
 @mixin icon-wordpress {
 	content: "\eab6";
 }
@@ -215,8 +224,29 @@
 	content: "\e987";	
 }
 
+/**
+ * usage example for the icons defined below
+ * <i class="icon-apple"></i>
+ *
+ */
+
+.icon-apple:before {
+	@include icon-apple;
+}
+.icon-github:before {
+	@include icon-github;
+}
 .icon-menu:before {
 	@include icon-menu;
+}
+.icon-plus:before {
+	@include icon-plus;
+}
+.icon-windows:before {
+	@include icon-windows;
+}
+.icon-youtube:before {
+	@include icon-youtube;
 }
 
 .widget_pages h2:before {

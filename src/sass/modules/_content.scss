@@ -279,8 +279,9 @@ a.post-thumbnail:focus {
 }
 
 .page-header {
-	border-bottom: 1px solid rgba(51, 51, 51, 0.1);
-	padding: 40px $base-padding 0;
+	background-color: lighten($light-gray, 5%);
+	border-bottom: 1px solid $light-gray;
+	padding: 30px $base-padding 0;
 }
 
 .page-title {
