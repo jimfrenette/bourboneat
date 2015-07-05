@@ -24,7 +24,6 @@ $bn_includes = [
 	'functions/init.php',		// Initial theme setup and constants
 	'functions/conditional-tag-check.php', // ConditionalTagCheck class
 	'functions/config.php',                // Configuration
-	'functions/titles.php',                // Titles
 	'functions/entry.php',                 // Posts, pages, categories, tags
 	'functions/assets.php',                // Scripts and stylesheets
 	'functions/comments.php',              // Comments
