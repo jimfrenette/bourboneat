@@ -13,11 +13,11 @@ footer.site-footer {
 
 // mobile first, breakpoints in /base/_grid-settings.scss
 .secondary {
-	@include span-columns(16);
+	@include span-columns($grid-columns);
 }
 
 .site-main {
-	@include span-columns(16);
+	@include span-columns($grid-columns);
 }
 
 // http://css-tricks.com/rems-ems/
@@ -34,11 +34,20 @@ html {
 @include media($large-screen) {
 
 	.secondary {
-	   	@include span-columns(5);
+	   	@include span-columns(($grid-columns / 4) + 1);
 	}
 	
 	.site-main {
-	    @include span-columns(11);
+	    @include span-columns($grid-columns - ($grid-columns / 4) - 1);
+
+		.span-columns-12 {
+			@include span-columns($grid-columns);
+		}
+
+		.span-columns-6 {
+			@include span-columns($grid-columns / 2);
+		}
+
 	}
 
 	.site-content {
@@ -50,10 +59,10 @@ html {
 @include media($wide-screen) {
 
 	.secondary {
-	   	@include span-columns(4);
+	   	@include span-columns($grid-columns / 4);
 	}
 	.site-main {
-	    @include span-columns(12);
+	    @include span-columns($grid-columns - ($grid-columns / 4));
 	}
 
 }
