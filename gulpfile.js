@@ -42,6 +42,8 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('./dist/styles/images/'))
 });
 
+gulp.task('build', ['styles','copy','js']);
+
 // watch task
 gulp.task('default',function() {
     gulp.watch('sass/**/*.scss',['styles']);
