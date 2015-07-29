@@ -6,6 +6,6 @@
 (function ($) {
 
     //modules/header.js
-    bn_app.header.init($);
+    bourboneat_app.header.init($);
 
 })( jQuery );

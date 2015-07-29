@@ -1,4 +1,4 @@
-bn_app.header = {
+bourboneat_app.header = {
 
     init: function($) {
 

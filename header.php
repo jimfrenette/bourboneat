@@ -16,7 +16,7 @@
 </head>
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'bn' ); ?></a>
+		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'bourboneat' ); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">
 
@@ -46,7 +46,7 @@
 
 			<section id="branding">
 				<img src="<?php echo get_template_directory_uri() . DIST_DIR; ?>styles/images/mountains.png" alt="">
-				<div id="site-title"><h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'bn' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a></h1></div>
+				<div id="site-title"><h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'bourboneat' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a></h1></div>
 				<div id="site-description"><?php bloginfo( 'description' ); ?></div>
 			</section>
 

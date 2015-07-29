@@ -17,10 +17,10 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1-alpha', '<' ) ) {
 /**
  * bourboneat includes
  *
- * $bn_includes array determines the functions included in the theme.
+ * $bourboneat_includes array determines the functions included in the theme.
  *
  */
-$bn_includes = [
+$bourboneat_includes = [
 	'functions/init.php',		// Initial theme setup and constants
 	'functions/conditional-tag-check.php', // ConditionalTagCheck class
 	'functions/config.php',                // Configuration
@@ -30,7 +30,7 @@ $bn_includes = [
   	'functions/custom.php'		// Custom functions
 ];
 
-foreach ($bn_includes as $file) {
+foreach ($bourboneat_includes as $file) {
 	if (!$filepath = locate_template($file)) {
 		trigger_error(sprintf(__('Error locating %s for inclusion', 'bourboneat'), $file), E_USER_ERROR);
 	}

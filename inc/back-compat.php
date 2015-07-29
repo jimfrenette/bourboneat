@@ -13,12 +13,12 @@
  *
  * Switches to the default theme.
  */
-function bn_switch_theme() {
+function bourboneat_switch_theme() {
 	switch_theme( WP_DEFAULT_THEME, WP_DEFAULT_THEME );
 	unset( $_GET['activated'] );
-	add_action( 'admin_notices', 'bn_upgrade_notice' );
+	add_action( 'admin_notices', 'bourboneat_upgrade_notice' );
 }
-add_action( 'after_switch_theme', 'bn_switch_theme' );
+add_action( 'after_switch_theme', 'bourboneat_switch_theme' );
 
 /**
  * Add message for unsuccessful theme switch.
@@ -26,17 +26,17 @@ add_action( 'after_switch_theme', 'bn_switch_theme' );
  * Prints an update nag after an unsuccessful attempt to switch to
  * Twenty Fifteen on WordPress versions prior to 4.1.
  */
-function bn_upgrade_notice() {
-	$message = sprintf( __( 'bourboneat requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', 'bn' ), $GLOBALS['wp_version'] );
+function bourboneat_upgrade_notice() {
+	$message = sprintf( __( 'bourboneat requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', 'bourboneat' ), $GLOBALS['wp_version'] );
 	printf( '<div class="error"><p>%s</p></div>', $message );
 }
 
 /**
  * Prevent the Theme Preview from being loaded on WordPress versions prior to 4.1.
  */
-function bn_preview() {
+function bourboneat_preview() {
 	if ( isset( $_GET['preview'] ) ) {
-		wp_die( sprintf( __( 'bourboneat requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', 'bn' ), $GLOBALS['wp_version'] ) );
+		wp_die( sprintf( __( 'bourboneat requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', 'bourboneat' ), $GLOBALS['wp_version'] ) );
 	}
 }
-add_action( 'template_redirect', 'bn_preview' );
+add_action( 'template_redirect', 'bourboneat_preview' );

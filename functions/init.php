@@ -23,10 +23,10 @@ function setup() {
 
 	// This theme uses wp_nav_menu() in four locations.
 	register_nav_menus( array(
-		'primary' 	=> __('Primary Menu', 'bn'),
-		'social'  	=> __('Social Links Menu', 'bn'),
-		'footer' 	=> __('Footer Menu', 'bn'), 
-		'terms' => __('Terms Footer Menu', 'bn') // typically for terms and conditions and privacy policy
+		'primary' 	=> __('Primary Menu', 'bourboneat'),
+		'social'  	=> __('Social Links Menu', 'bourboneat'),
+		'footer' 	=> __('Footer Menu', 'bourboneat'), 
+		'terms' => __('Terms Footer Menu', 'bourboneat') // typically for terms and conditions and privacy policy
 	));
 
 	/*
@@ -46,8 +46,8 @@ function setup() {
 	));
 
 	//TODO
-	//Fatal error: Call to undefined function Bourboneat\bn_get_color_scheme()
-	//$color_scheme  = bn_get_color_scheme();
+	//Fatal error: Call to undefined function Bourboneat\bourboneat_get_color_scheme()
+	//$color_scheme  = bourboneat_get_color_scheme();
 	//$default_color = trim( $color_scheme[0], '#' );
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
@@ -57,9 +57,9 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
  */
 function widgets_init() {
 	register_sidebar( array(
-		'name'          => __('Widget Area', 'bn'),
+		'name'          => __('Widget Area', 'bourboneat'),
 		'id'            => 'sidebar-1',
-		'description'   => __('Add widgets here to appear in your sidebar.', 'bn'),
+		'description'   => __('Add widgets here to appear in your sidebar.', 'bourboneat'),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',

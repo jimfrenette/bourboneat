@@ -25,7 +25,7 @@
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
-				__( 'Continue reading %s', 'bn' ),
+				__( 'Continue reading %s', 'bourboneat' ),
 				the_title( '<span class="screen-reader-text">', '</span>', false )
 			) );
 
@@ -50,7 +50,7 @@
 
 	<footer class="entry-footer">
 		<?php Bourboneat\entry_meta(); ?>
-		<?php edit_post_link( __( 'Edit', 'bn' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'bourboneat' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer>
 	<!-- .entry-footer -->
 

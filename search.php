@@ -14,7 +14,7 @@ get_sidebar();
 	if ( have_posts() ) : ?>
 
 		<header class="page-header">
-			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'bn' ), get_search_query() ); ?></h1>
+			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'bourboneat' ), get_search_query() ); ?></h1>
 		</header><!-- .page-header -->
 
 		<?php
@@ -34,8 +34,8 @@ get_sidebar();
 
 		// Previous/next page navigation.
 		the_posts_pagination( array(
-			'prev_text'          => __( 'Previous page', 'bn' ),
-			'next_text'          => __( 'Next page', 'bn' ),
+			'prev_text'          => __( 'Previous page', 'bourboneat' ),
+			'next_text'          => __( 'Next page', 'bourboneat' ),
 			'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
 		) );
 
