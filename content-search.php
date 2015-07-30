@@ -24,13 +24,13 @@
 		<footer class="entry-footer">
 			<?php 
 				Bourboneat\entry_meta();
-				edit_post_link( __( 'Edit', 'bourboneat' ), '<span class="edit-link">', '</span>' );
+				edit_post_link( esc_attr__( 'Edit', 'bourboneat' ), '<span class="edit-link">', '</span>' );
 			?>
 		</footer><!-- .entry-footer -->
 
 	<?php
 		else :
-			edit_post_link( __( 'Edit', 'bourboneat' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' );
+			edit_post_link( esc_attr__( 'Edit', 'bourboneat' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' );
 		endif;
 	?>
 

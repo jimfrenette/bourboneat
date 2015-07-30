@@ -23,10 +23,10 @@ function setup() {
 
 	// This theme uses wp_nav_menu() in four locations.
 	register_nav_menus( array(
-		'primary' 	=> __('Primary Menu', 'bourboneat'),
-		'social'  	=> __('Social Links Menu', 'bourboneat'),
-		'footer' 	=> __('Footer Menu', 'bourboneat'), 
-		'terms' => __('Terms Footer Menu', 'bourboneat') // typically for terms and conditions and privacy policy
+		'primary' 	=> esc_attr__('Primary Menu', 'bourboneat'),
+		'social'  	=> esc_attr__('Social Links Menu', 'bourboneat'),
+		'footer' 	=> esc_attr__('Footer Menu', 'bourboneat'), 
+		'terms' => esc_attr__('Terms Footer Menu', 'bourboneat') // typically for terms and conditions and privacy policy
 	));
 
 	/*
@@ -57,9 +57,9 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
  */
 function widgets_init() {
 	register_sidebar( array(
-		'name'          => __('Widget Area', 'bourboneat'),
+		'name'          => esc_attr__('Widget Area', 'bourboneat'),
 		'id'            => 'sidebar-1',
-		'description'   => __('Add widgets here to appear in your sidebar.', 'bourboneat'),
+		'description'   => esc_attr__('Add widgets here to appear in your sidebar.', 'bourboneat'),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',

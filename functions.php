@@ -32,7 +32,7 @@ $bourboneat_includes = [
 
 foreach ($bourboneat_includes as $file) {
 	if (!$filepath = locate_template($file)) {
-		trigger_error(sprintf(__('Error locating %s for inclusion', 'bourboneat'), $file), E_USER_ERROR);
+		trigger_error(sprintf(esc_attr__('Error locating %s for inclusion', 'bourboneat'), $file), E_USER_ERROR);
 	}
 
 	require_once $filepath;
