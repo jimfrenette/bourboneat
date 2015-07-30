@@ -1,5 +1,14 @@
-# bourboneat
-Wordpress Theme (v4.1 and later) with SASS, Bourbon.io Neat and IcoMoon.io icons
+=== bourboneat ===
+bourboneat is a starter theme for building custom themes designed for WordPress version 4.1 and later. The theme uses the Bourbon Sass library and it’s Neat semantic grid components for a lightweight and modular responsive design. The header and footer designs were taken from the Bourbon Refills collection. Also included are IcoMoon font icons which can be easily updated using the IcoMoon app. Gulp’s build system is used to compile and minify Sass and Javascript modules into optimized CSS and Javascript. Clone, fork or download this responsive starter theme at GitHub and modify it as you wish into the theme you want.
+
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+Bourbon is licensed under The MIT License (MIT),
+https://github.com/thoughtbot/bourbon/blob/master/LICENSE.md
+
+IcoMoon.io icons are licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
 
 ## setup
 <pre><code>
