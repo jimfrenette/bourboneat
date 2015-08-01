@@ -45,7 +45,9 @@
 			</div>
 
 			<section id="branding">
-				<img src="<?php echo get_template_directory_uri() . DIST_DIR; ?>styles/images/mountains.png" alt="">
+				<?php if ( get_header_image() ) : ?>
+				<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
+				<?php endif; // End header image check. ?>
 				<div id="site-title"><h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1></div>
 				<div id="site-description"><?php bloginfo( 'description' ); ?></div>
 			</section>
