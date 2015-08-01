@@ -45,10 +45,6 @@ function setup() {
 		'aside', 'image', 'video', 'quote', 'link', 'gallery', 'status', 'audio', 'chat'
 	));
 
-	//TODO
-	//Fatal error: Call to undefined function Bourboneat\bourboneat_get_color_scheme()
-	//$color_scheme  = bourboneat_get_color_scheme();
-	//$default_color = trim( $color_scheme[0], '#' );
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
