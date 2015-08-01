@@ -9,7 +9,7 @@
 
 		<footer class="site-footer" role="contentinfo">
 			<div class="footer-logo">
-				<img src="<?php echo get_template_directory_uri() . DIST_DIR; ?>styles/images/placeholder_logo_1.png" alt="Logo image">
+				<img src="<?php echo get_template_directory_uri() . DIST_DIR; ?>styles/images/placeholder_logo_1.png" alt="<?php esc_attr_e( 'Logo Image', 'bourboneat' ); ?>">
 			</div>
 
 			<?php if ( has_nav_menu('footer') ) : ?>
