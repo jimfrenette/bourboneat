@@ -14,7 +14,7 @@
  */
 function _bourboneat_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( '_bourboneat_custom_header_args', array(
-		'default-image'          => '/wp-content/themes/bourboneat/dist/styles/images/mountains.png',
+		'default-image'          => get_stylesheet_directory_uri() . '/dist/styles/images/mountains.png',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
