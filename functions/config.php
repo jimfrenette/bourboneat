@@ -8,15 +8,11 @@ use Bourboneat\ConditionalTagCheck;
  * Configuration values
  */
 
-if (!defined('DIST_DIR')) {
+if (!defined('bourboneat_dist_dir')) {
 	// Path to the build directory for front-end assets
-	define('DIST_DIR', '/dist/');
+	define('bourboneat_dist_dir', '/dist/');
 }
 
-/**
- * TODO: TEST THIS (it is from themes/sage)
- * Define which pages shouldn't have the sidebar
- */
 function display_sidebar() {
 	static $display;
 

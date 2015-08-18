@@ -14,7 +14,7 @@ namespace Bourboneat;
  */
 
 function asset_path($filename) {
-	$dist_path = get_template_directory_uri() . DIST_DIR;
+	$dist_path = get_template_directory_uri() . bourboneat_dist_dir;
 	$directory = dirname($filename) . '/';
 	$file = basename($filename);
     return $dist_path . $directory . $file;
