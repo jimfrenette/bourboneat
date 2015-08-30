@@ -14,11 +14,11 @@ function comment_nav() {
 		<div class="nav-links">
 			<?php
 				if ( $prev_link = get_previous_comments_link( esc_attr__( 'Older Comments', 'bourboneat' ) ) ) :
-					printf( '<div class="nav-previous">%s</div>', $prev_link );
+					printf( '<div class="nav-previous">%s</div>', esc_url( $prev_link ) );
 				endif;
 
 				if ( $next_link = get_next_comments_link( esc_attr__( 'Newer Comments', 'bourboneat' ) ) ) :
-					printf( '<div class="nav-next">%s</div>', $next_link );
+					printf( '<div class="nav-next">%s</div>', esc_url( $next_link ) );
 				endif;
 			?>
 		</div><!-- .nav-links -->

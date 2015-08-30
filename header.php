@@ -22,7 +22,7 @@
 
 			<div class="navigation-wrapper">
 			    <a href="/" class="logo" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>">
-			    	<img src="<?php echo get_template_directory_uri() . bourboneat_dist_dir; ?>styles/images/placeholder_logo_1.png" alt="<?php esc_attr_e( 'Logo Image', 'bourboneat' ); ?>">
+			    	<img src="<?php echo esc_url( get_template_directory_uri() . bourboneat_dist_dir ); ?>styles/images/placeholder_logo_1.png" alt="<?php esc_attr_e( 'Logo Image', 'bourboneat' ); ?>">
 			    </a>
 			    <a href="javascript:void(0)" class="navigation-menu-button icon-menu" id="menu-main-mobile"></a>
 					
