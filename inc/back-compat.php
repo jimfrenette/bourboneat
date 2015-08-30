@@ -27,8 +27,8 @@ add_action( 'after_switch_theme', 'bourboneat_switch_theme' );
  * Twenty Fifteen on WordPress versions prior to 4.1.
  */
 function bourboneat_upgrade_notice() {
-	$message = sprintf( 'bourboneat requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', 'bourboneat', $GLOBALS['wp_version'] );
-	printf( '<div class="error"><p>%s</p></div>', esc_html__( $message ) );
+	$message = sprintf( 'bourboneat requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', $GLOBALS['wp_version'] );
+	printf( '<div class="error"><p>%s</p></div>', esc_html__( $message, 'bourboneat' ) );
 }
 
 /**
@@ -36,7 +36,8 @@ function bourboneat_upgrade_notice() {
  */
 function bourboneat_preview() {
 	if ( isset( $_GET['preview'] ) ) {
-		wp_die( sprintf( esc_attr__( 'bourboneat requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', 'bourboneat', $GLOBALS['wp_version'] ) ) );
+		$message = sprintf( 'bourboneat requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again.', $GLOBALS['wp_version'] );
+		wp_die( sprintf( esc_html__( $message, 'bourboneat' ) ) );
 	}
 }
 add_action( 'template_redirect', 'bourboneat_preview' );
