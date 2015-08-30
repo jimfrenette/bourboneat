@@ -46,7 +46,7 @@ function entry_meta() {
 		printf( '<span class="entry-format">%1$s<a href="%2$s">%3$s</a></span>',
 			sprintf( '<span class="screen-reader-text">%s </span>', esc_html_x( 'Format', 'Used before post format.', 'bourboneat' ) ),
 			esc_url( get_post_format_link( $format ) ),
-			get_post_format_string( $format )
+			esc_html( get_post_format_string( $format ) )
 		);
 	}
 
@@ -104,8 +104,7 @@ function entry_meta() {
 		printf( '<span class="full-size-link"><span class="screen-reader-text">%1$s </span><a href="%2$s">%3$s &times; %4$s</a></span>',
 			esc_html_x( 'Full size', 'Used before full size attachment link.', 'bourboneat' ),
 			esc_url( wp_get_attachment_url() ),
-			$metadata['width'],
-			$metadata['height']
+			esc_html( $metadata['width'], $metadata['height'] )
 		);
 	}
 
