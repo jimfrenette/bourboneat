@@ -58,11 +58,11 @@ function entry_meta() {
 		        'datetime' => array()
 		    )
 		);
-
-		$time_string = wp_kses( '<time class="entry-date published updated" datetime="%1$s">%2$s</time>', $allowed_time_html );
+		
+		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-			$time_string = wp_kses( '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>', $allowed_time_html );
+			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 		}
 
 		$time_string = sprintf( $time_string,
@@ -75,7 +75,7 @@ function entry_meta() {
 		printf( '<span class="posted-on"><span class="screen-reader-text">%1$s </span><a href="%2$s" rel="bookmark">%3$s</a></span>',
 			esc_html_x( 'Posted on', 'Used before publish date.', 'bourboneat' ),
 			esc_url( get_permalink() ),
-			$time_string
+			$time_string = wp_kses( $time_string, $allowed_time_html )
 		);
 	}
 
