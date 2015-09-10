@@ -90,6 +90,7 @@ header.site-header {
 		}
 
 		@include media ($horizontal-bar-mode) {
+			position: relative;
 			display: inline;
 			margin: 0;
 			padding: 0;
