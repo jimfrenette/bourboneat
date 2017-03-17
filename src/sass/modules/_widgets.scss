@@ -1,6 +1,6 @@
 .widget {
-	background-color: $content-background-color;
-	
+	background-color: lighten($light-gray, 5%);
+
 	color: $medium-gray;
 	color: rgba(51, 51, 51, 0.7);
 	-webkit-hyphens: auto;
@@ -8,13 +8,13 @@
 	-ms-hyphens: auto;
 	hyphens: auto;
 	margin: 0 auto;
-	padding: 30px $base-padding;	
+	padding: 30px $base-padding;
 	width: 100%;
 	word-wrap: break-word;
 	pre {
 		line-height: 1.2;
 	}
-	> :first-child {	
+	> :first-child {
 		padding-top: 0;
 	}
 	> :last-child {
@@ -68,16 +68,16 @@
 .widget_recent_comments,
 .widget_recent_entries {
 	a {
-		border: 0;	
+		border: 0;
 	}
 	ul {
 		list-style: none;
-		margin: 0;		
+		margin: 0;
 	}
 	li {
 		border-top: 1px solid $light-gray;
 		border-top: 1px solid rgba(51, 51, 51, 0.1);
-		padding: 0.7667em 0;		
+		padding: 0.7667em 0;
 	}
 	li:first-child {
 		border-top: 0;
@@ -98,6 +98,45 @@
 	border-top: 1px solid rgba(51, 51, 51, 0.1);
 	margin: 0.7667em 0 0 0.8em;
 	padding-top: 0.7667em;
+}
+
+.widget_pages {
+    .page_item {
+        position: relative;
+        margin-right: 28px;
+
+        &.is-expanded {
+            .icon-circle-down:before {
+                content: "\ea41";
+            }
+        }
+    }
+
+    [class^="icon-"] {
+        position: absolute;
+        top: 14px;
+        right: 0;
+        display: block;
+        width: 28px;
+        height: 24px;
+        padding-top: 4px;
+        font-size: 16px;
+        text-align: right;
+        cursor: pointer;
+        color: lighten($medium-gray, 15%);
+
+        &:hover {
+            color: $medium-gray;
+        }
+    }
+}
+
+.widget_pages .children {
+    display: none;
+
+    &.is-expanded {
+        display: block;
+    }
 }
 
 .widget_recent_entries .post-date {
@@ -136,16 +175,15 @@
 .textwidget {
 	> :last-child {
 		margin-bottom: 0;
-	}	
+	}
 	a {
 		border-bottom: 1px solid $dark-gray;
 		&:hover,
 		&:focus {
-			border-bottom: 0;		
+			border-bottom: 0;
 		}
 	}
 }
-
 
 @include media($large-screen-up) {
 

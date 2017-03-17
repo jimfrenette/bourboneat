@@ -92,10 +92,10 @@
 	content: "\ea3c";
 }
 @mixin icon-bubble {
-	content: "\e96b";	
+	content: "\e96b";
 }
 @mixin icon-bubbles {
-	content: "\e96c";	
+	content: "\e96c";
 }
 @mixin icon-calendar {
 	content: "\e953";
@@ -103,8 +103,17 @@
 @mixin icon-cancel-circle {
 	content: "\ea0d";
 }
+@mixin icon-circle-down {
+    content: "\ea43";
+}
+@mixin icon-circle-up {
+    content: "\ea41";
+}
 @mixin icon-codepen {
 	content: "\eae4";
+}
+@mixin icon-cross {
+	content: "\ea0f";
 }
 @mixin icon-dribbble {
 	content: "\eaa7";
@@ -120,6 +129,9 @@
 }
 @mixin icon-flickr {
 	content: "\eaa2";
+}
+@mixin icon-folder {
+	content: "\e92f";
 }
 @mixin icon-folder-open {
 	content: "\e930";
@@ -152,13 +164,16 @@
 	content: "\ea83";
 }
 @mixin icon-menu {
-	content: "\e9bd";	
+	content: "\e9bd";
 }
 @mixin icon-mug {
-	content: "\e9a2";	
+	content: "\e9a2";
 }
 @mixin icon-new-tab {
-	content: "\ea7e";	
+	content: "\ea7e";
+}
+@mixin icon-pencil {
+	content: "\e905";
 }
 @mixin icon-pinterest {
 	content: "\ead1";
@@ -170,10 +185,10 @@
 	content: "\ea0a";
 }
 @mixin icon-price-tag {
-	content: "\e935";	
+	content: "\e935";
 }
 @mixin icon-price-tags {
-	content: "\e936";	
+	content: "\e936";
 }
 @mixin icon-pushpin {
 	content: "\e946";
@@ -221,7 +236,7 @@
 	content: "\ea97";
 }
 @mixin icon-zoom-in {
-	content: "\e987";	
+	content: "\e987";
 }
 
 /**
@@ -233,11 +248,29 @@
 .icon-apple:before {
 	@include icon-apple;
 }
+.icon-circle-down:before {
+	@include icon-circle-down;
+}
+.icon-circle-up:before {
+	@include icon-circle-up;
+}
+.icon-cross:before {
+	@include icon-cross;
+}
+.icon-folder:before {
+	@include icon-folder;
+}
+.icon-folder-open:before {
+	@include icon-folder-open;
+}
 .icon-github:before {
 	@include icon-github;
 }
 .icon-menu:before {
 	@include icon-menu;
+}
+.icon-pencil:before {
+	@include icon-pencil;
 }
 .icon-plus:before {
 	@include icon-plus;
